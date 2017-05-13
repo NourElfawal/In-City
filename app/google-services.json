@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "791434806134",
+    "firebase_url": "https://alexapp-258bf.firebaseio.com",
+    "project_id": "alexapp-258bf",
+    "storage_bucket": "alexapp-258bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791434806134:android:6518d1dbae8e026c",
+        "android_client_info": {
+          "package_name": "com.example.android.alexapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791434806134-3h8v9bnq5r8unsu77rog058bh5jbq1sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.alexapp",
+            "certificate_hash": "56ecc500f8c6fa92afecd15198be251a5452ac61"
+          }
+        },
+        {
+          "client_id": "791434806134-rdd7m4q6ntha5nvpi0uvogf41lbi8bc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.alexapp",
+            "certificate_hash": "4948c7d2cdf889540997fb042fef2d473e54b1c3"
+          }
+        },
+        {
+          "client_id": "791434806134-0t6r8a70b42ecl9s846eglgq0la33i5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtYetzvM8-CzQJwi6xX0f5nKnMjF02Mlw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791434806134-0t6r8a70b42ecl9s846eglgq0la33i5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

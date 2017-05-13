@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_one_dynamic_plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.alexapp.DetailsOfUserPlanActivity">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbarDetialsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/smalllinerlayoutbackground"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+                <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+                <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Name: "
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan_item_details_name"
+                    android:layout_marginRight="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Plan Duration: "
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    />
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan_item_details_duration"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="5dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- contain recyclerview of place -->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/plan_details_recyclerview">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+

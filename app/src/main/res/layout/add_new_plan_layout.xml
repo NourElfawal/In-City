@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!-- name category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <!-- Name Label -->
+            <TextView
+                android:text="@string/plan_name"
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                />
+            <!-- Name field -->
+
+            <EditText
+                android:id="@+id/new_plan_name"
+                android:layout_weight="1.75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+       <!-- &lt;!&ndash; loction category &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            &lt;!&ndash; Name Label &ndash;&gt;
+            <TextView
+                android:text="@string/plan_startLocation"
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                />
+            &lt;!&ndash; Name field &ndash;&gt;
+
+            <EditText
+                android:id="@+id/new_plan_location"
+                android:layout_weight="1.75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>-->
+
+       <!-- &lt;!&ndash; duration category &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            &lt;!&ndash; Name Label &ndash;&gt;
+            <TextView
+                android:text="@string/plan_duration"
+                android:layout_width="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                />
+            &lt;!&ndash; Name field &ndash;&gt;
+
+            <EditText
+                android:id="@+id/new_plan_duration"
+                android:layout_weight="1.75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_plan_recycleView">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        app:srcCompat="@drawable/com_facebook_button_like_icon_selected"
+        android:id="@+id/floatingAction_save"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="35dp"
+        app:backgroundTint="?attr/colorPrimary"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

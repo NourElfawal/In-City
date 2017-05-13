@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--<group android:checkableBehavior="single">
+        <item android:title="Plan in 1 to 3 days">
+        <menu>
+        <item
+            android:id="@+id/nav_1day"
+            android:icon="@drawable/ic_looks_one_black_24dp"
+            android:title="1 Day"
+            />
+        <item
+            android:id="@+id/nav_2days"
+            android:icon="@drawable/ic_looks_two_black_24dp"
+            android:title="2 Days" />
+        <item
+            android:id="@+id/nav_3days"
+            android:icon="@drawable/ic_looks_3_black_24dp"
+            android:title="3 Days" />
+
+        </menu>
+        </item>
+
+    </group>-->
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/tracking"
+        android:title="Notify Me Nearby Places"
+        android:icon="@drawable/iconnotifyme"/>
+    </group>
+
+    <item android:title="Make Your Plan">
+        <menu>
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/myPlans"
+                android:title="My Plans"
+                android:icon="@drawable/listplan"/>
+        </group>
+        </menu>
+
+    </item>
+
+    <group>
+        <item android:id="@+id/addnewplace"
+            android:title="Add New Place"
+            android:icon="@drawable/ic_add_a_photo_black_24dp"/>
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/logoutnew"
+                android:title="Sign out" />
+        </menu>
+    </item>
+
+</menu>
